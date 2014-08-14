@@ -433,7 +433,9 @@ th {
     overflow: hidden
 }
 
-/*.site-header .search-form { margin: 16px auto }*/
+.site-header .search-form {
+    margin: 16px auto
+}
 
 .error404 .search-form input[type="submit"],
 .widget_search input[type="submit"] {
