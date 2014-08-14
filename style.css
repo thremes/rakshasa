@@ -15,3 +15,158 @@
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/*body { }*/
+
+/* # Only Screen ≥ 568px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 35.5em) {
+
+    /* ## Defaults
+    --------------------------------------------- */
+    /*body { }*/
+}
+
+/* # Only Screen ≥ 768px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 48em) {
+
+    /* ## Common Classes
+    --------------------------------------------- */
+    .archive-description,
+    .author-box {
+        border: 1px solid #F3F3F3;
+        padding: 40px;
+    }
+}
+
+/* # Only Screen ≥ 1024px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 64em) {
+
+    /* ## Site Containers
+    --------------------------------------------- */
+    .site-inner,
+    .wrap {
+        margin: 0 auto;
+        max-width: 960px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* ## Column Widths and Positions
+    --------------------------------------------- */
+    /* ### Content */
+    .content {
+        float: right;
+        width: 620px;
+    }
+
+    .content-sidebar .content {
+        float: left
+    }
+
+    .full-width-content .content {
+        width: 100%
+    }
+
+    /* ### Primary Sidebar */
+    .sidebar-primary {
+        float: right;
+        width: 300px;
+    }
+
+    .sidebar-content .sidebar-primary {
+        float: left
+    }
+
+    /* ## Site Header
+    --------------------------------------------- */
+    .site-header {
+        min-height: 120px;
+        text-align: left;
+    }
+
+    .site-header .wrap {
+        padding: 20px 0
+    }
+
+    /* ### Title Area */
+    .title-area {
+        float: left;
+        width: 300px;
+    }
+
+    .header-full-width .title-area {
+        width: 100%
+    }
+
+    /* ### Widget Area */
+    .site-header .widget-area {
+        float: right;
+        text-align: right;
+        width: 620px;
+    }
+
+    /* ## Site Navigation
+    --------------------------------------------- */
+    .genesis-nav-menu {
+        text-align: inherit
+    }
+
+    .genesis-nav-menu a {
+        padding: 34px 24px
+    }
+
+}
+
+/* # Only Screen ≥ 1280px
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 80em) {
+
+    /* ## Defaults
+    --------------------------------------------- */
+    body {
+        background: #F5F5F5;
+    }
+
+    /* ## Site Containers
+    --------------------------------------------- */
+    .site-inner,
+    .wrap {
+        max-width: 1200px
+    }
+
+    .site-inner {
+        background: #FFF;
+        margin: 40px auto;
+        padding: 40px 40px 0;
+    }
+
+    /* ## Column Widths and Positions
+    --------------------------------------------- */
+    .content {
+        width: 760px
+    }
+
+    .sidebar-primary {
+        width: 320px
+    }
+
+    /* ## Site Header
+    --------------------------------------------- */
+    .title-area {
+        width: 360px
+    }
+
+    .site-header .widget-area {
+        width: 800px
+    }
+
+}
