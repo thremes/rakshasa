@@ -40,9 +40,6 @@ final class Rakshasa_Main
 
         //* Add viewport meta tag for mobile browsers
         add_theme_support( 'genesis-responsive-viewport' );
-
-        //* Add support for 3-column footer widgets
-        add_theme_support( 'genesis-footer-widgets', 3 );
     }
 
     /**
