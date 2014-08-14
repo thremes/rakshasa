@@ -2,7 +2,7 @@
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Rakshasa Theme' );
-define( 'CHILD_THEME_URL', 'https://github.com/trsenna/rakshasa' );
+define( 'CHILD_THEME_URL', 'https://github.com/thremes/rakshasa' );
 
 //* Load main functionality
 add_action( 'genesis_setup', array( 'Rakshasa_Main', 'get_instance' ) );
