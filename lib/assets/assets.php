@@ -43,9 +43,8 @@ final class Rakshasa_Assets
      */
     function fonts()
     {
-        $open_sans   = 'Open+Sans:300,400,600,700';
-        $droid_serif = 'Droid+Serif:400,700,400italic,700italic';
-        $this->enqueue_style( 'rakshasa-fonts', "//fonts.googleapis.com/css?family={$open_sans}|{$droid_serif}" );
+        $lato = 'Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic';
+        wp_enqueue_style( 'rakshasa-fonts', "//fonts.googleapis.com/css?family={$lato}" );
     }
 
     /**
