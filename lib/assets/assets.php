@@ -43,7 +43,7 @@ final class Rakshasa_Assets
      */
     function fonts()
     {
-        $lato = 'Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic';
+        $lato = 'Lato:300,400,700,900,300italic,400italic,700italic,900italic';
         wp_enqueue_style( 'rakshasa-fonts', "//fonts.googleapis.com/css?family={$lato}" );
     }
 
@@ -66,7 +66,9 @@ final class Rakshasa_Assets
      */
     private function enqueue_style( $handle, $src, $deps = array(), $media = 'all' )
     {
-        $src = trailingslashit( get_stylesheet_directory_uri() ) . "lib/assets/css/{$src}";
-        wp_enqueue_style( $handle, $src, $deps, FALSE, $media );
+        if ( file_exists( trailingslashit( get_stylesheet_directory() ) . "lib/assets/css/{$src}" ) ) {
+            $src = trailingslashit( get_stylesheet_directory_uri() ) . "lib/assets/css/{$src}";
+            wp_enqueue_style( $handle, $src, $deps, FALSE, $media );
+        }
     }
 }

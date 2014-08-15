@@ -18,7 +18,7 @@ final class Rakshasa_Cleanup
         genesis_unregister_layout( 'sidebar-sidebar-content' );
         genesis_unregister_layout( 'sidebar-content-sidebar' );
 
-        //* Unregister primary/secondary navigation menus
+        //* Unregister primary/secondary navigation
         remove_theme_support( 'genesis-menus' );
     }
 
